@@ -44,7 +44,7 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-            <a href={currentProject.href} target="_blank" rel="noreferrer" className="flex items-center gap-2 cursor-pointer text-white-600">
+            <a href={currentProject.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 cursor-pointer text-white-600">
               <p>Github</p>
               <img src="/assets/github.png" alt="github" className="w-4 h-4" />
             </a>

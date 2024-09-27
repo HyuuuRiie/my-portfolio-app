@@ -20,14 +20,14 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      await emailjs.send('service_iq8cptu', 'template_0pqozhw', {
+      await emailjs.send('service_dmofhoq', 'template_shtwqyp', {
         from_name: form.name,
         to_name: 'Fajri',
         from_email: form.email,
-        to_email: 'wahyuseptiadifajri11@gmail.com',
+        to_email: 'mrxdzibit@gmail.com',
         message: form.message
       },
-      'xFkUO259tbvcMgz3b'
+      'j1wViaPWyDbIoxQ8F'
     )
       setLoading(false)
       // alert('Your Message Has Been Sent')
