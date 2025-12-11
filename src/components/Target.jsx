@@ -5,7 +5,12 @@ import { useGSAP } from '@gsap/react'
 
 const Target = (props) => {
   const targetRef = useRef()
-  const {scene} = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf') 
+  try{
+    const {scene} = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf') 
+  }catch (error) {
+    console.error('Model failed to load:', error)
+    return null // or return a fallback mesh
+  }
 
   useGSAP(()=>{
     gsap.to(targetRef.current.position, {
